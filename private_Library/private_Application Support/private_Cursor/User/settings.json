@@ -1,0 +1,60 @@
+{
+  "workbench.colorTheme": "Gloom Contrast (rainglow)",
+  "editor.fontSize": 14,
+  "javascript.suggestionActions.enabled": false,
+  "typescript.suggestionActions.enabled": false,
+  "editor.suggestSelection": "first",
+  "editor.formatOnSave": true,
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "python.defaultInterpreterPath": "/opt/homebrew/bin/python3",
+  "vim.handleKeys": {
+    "<C-c>": false,
+    "<C-v>": false
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "cSpell.userWords": ["persistor", "Pressable", "reduxjs"],
+  "editor.inlineSuggest.enabled": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "gitlens.views.repositories.files.layout": "list",
+  "workbench.editor.enablePreview": false,
+  "window.commandCenter": false,
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "extensions.ignoreRecommendations": true,
+  "editor.minimap.enabled": false,
+  "cursor.cpp.disabledLanguages": ["scminput"],
+  "kotlin.languageServer.enabled": false,
+  "kotlin.debugAdapter.enabled": false,
+  "git.openRepositoryInParentFolders": "never",
+  "go.lintTool": "golangci-lint",
+  "go.lintFlags": ["--path-mode=abs", "--fast-only"],
+  "go.formatTool": "custom",
+  "go.alternateTools": {
+    "customFormatter": "golangci-lint"
+  },
+  "go.formatFlags": ["fmt", "--stdin"],
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
