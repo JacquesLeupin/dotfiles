@@ -18,7 +18,7 @@ fi
 brew update
 
 # ---- 2. Core CLI tools (Node ≥18, Watchman) ----------------------------------
-for pkg in node watchman; do                 # Node & Watchman required :contentReference[oaicite:1]{index=1}
+for pkg in node watchman; do                 # Node & Watchman required
   brew_has "$pkg" || brew install "$pkg"
 done
 
@@ -27,7 +27,7 @@ brew_has yarn || brew install yarn
 
 # ---- 3. Java 17 LTS (required by Android/Gradle) -----------------------------
 if ! /usr/libexec/java_home -v 17 &>/dev/null; then
-  brew install --cask zulu@17                # Azul Zulu JDK 17 recommended :contentReference[oaicite:2]{index=2}
+  brew install --cask zulu@17                # Azul Zulu JDK 17 recommended
 fi
 JDK_HOME=$(/usr/libexec/java_home -v 17)
 grep -q "JAVA_HOME.*zulu-17" ~/.zshrc 2>/dev/null || {
@@ -41,16 +41,16 @@ grep -q "JAVA_HOME.*zulu-17" ~/.zshrc 2>/dev/null || {
 }
 
 # ---- 4. iOS tool‑chain -------------------------------------------------------
-if ! xcode-select -p &>/dev/null; then       # Full Xcode, simulators etc. :contentReference[oaicite:3]{index=3}
+if ! xcode-select -p &>/dev/null; then       # Full Xcode, simulators etc.
   echo "Installing Xcode (large download)…"
   brew install --cask xcode                  # Will open App Store UI if needed
   sudo xcodebuild -license accept
 fi
-command_exists pod || sudo gem install cocoapods   # CocoaPods gem :contentReference[oaicite:4]{index=4}
+command_exists pod || sudo gem install cocoapods   # CocoaPods gem 
 
 # ---- 5. Android tool‑chain ---------------------------------------------------
 for cask in android-studio android-platform-tools; do
-  cask_has "$cask" || brew install --cask "$cask"  # Installs SDK, ADB, emulator :contentReference[oaicite:5]{index=5}
+  cask_has "$cask" || brew install --cask "$cask"  # Installs SDK, ADB, emulator
 done
 
 ANDROID_LINES='
